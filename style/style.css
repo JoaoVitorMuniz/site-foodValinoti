@@ -1,0 +1,23 @@
+
+
+
+.imagem-carrosel{
+   object-fit: cover;
+   object-position: 0 80%;
+   height: 30rem;
+ 
+}
+
+.nav-link{
+    margin-left: 2rem;
+}
+
+.navbar-nav{
+
+     margin-right: 15rem;
+}
+
+.titulos-carrosel{
+
+    color: seashell;
+}
