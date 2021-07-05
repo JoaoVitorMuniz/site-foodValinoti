@@ -13,91 +13,146 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Valinoti D&S</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+    <!--Header do Site-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Valinoti D&S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li><a class="nav-link" href="#">Encomendas</a></li>
+                        <li> <a class="nav-link" href="#">Sobre</a></li>
+                        <li><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Conteudo Principal-->
+    <main>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active " data-bs-interval="2000">
+                    <div id="fundo-imagem">
+                        <img src="./assets/esfirra-exemplo2.jpg" class="d-block w-100 imagem-carrosel" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div id="fundo-imagem">
+                        <img src="./assets/sopas.jpg" class="d-block w-100 imagem-carrosel" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div id="fundo-imagem"></div>
+                    <img src="./assets/saladas-de-pote.jpg" class="d-block w-100 imagem-carrosel" alt="...">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Encomendas</a>
-                    <a class="nav-link" href="#">Sobre</a>
-                    <a class="nav-link" href="#">Contato</a>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h1 class="text-center tituloDoMeio $red-500s">Pratos Deliciosos </h1>
+        <p class="text-center text-secondary paragrafoDoMeio">Comidas do dia feita no forno a lenha, aproveita com a sua
+            familia o melhor
+            dos salgados
+            brasileiros
+        </p>
+
+
+        <section class="itens container-card">
+            <article class="card todas widthCard">
+                <img src="./assets/bvcxdg (15)-tile.jpg" class="card-img-top img-lag card-position-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="#" class="btn  botao-cor">Go somewhere</a>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./assets/esfirra-exemplo2.jpg" class="d-block w-100 imagem-carrosel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="titulos-carrosel">Esfirras</h2>
+            </article>
+            <article class="card todas widthCard">
+                <img src="./assets/esfirra-carne-tradicional-768x512.jpg" class="card-img-top img-lag card-position-img"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="#" class="btn  botao-cor">Go somewhere</a>
                 </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="./assets/sopas.jpg" class="d-block w-100 imagem-carrosel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="titulos-carrosel">Sopas</h2>
+            </article>
+            <article class="card todas widthCard">
+                <img src="./assets/esfirra-carne-tradicional-768x512.jpg" class="card-img-top img-lag card-position-img"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="#" class="btn  botao-cor">Go somewhere</a>
                 </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="./assets/saladas-de-pote.jpg" class="d-block w-100 imagem-carrosel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="titulos-carrosel">Salas De Pote</h2>
+            </article>
+
+
+            <article class="card todas widthCard">
+                <img src="./assets/esfirra-carne-tradicional-768x512.jpg" class="card-img-top img-lag card-position-img"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="#" class="btn  botao-cor">Go somewhere</a>
                 </div>
-            </div>
+            </article>
+
+            <article class="card todas widthCard">
+                <img src="./assets/sopas.jpg" class="card-img-top img-lag card-position-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="#" class="btn  botao-cor">Go somewhere</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <!--Mapa do Site-->
+        <div class="footer-map" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ribeir%C3%A3o%20pires%20santa%20luzia+(My%20Business%20Name)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </footer>
 
 
-    <div class="itens">
-
-        <div class="item1 ">
-            <img class="imagens-comidas" src="./assets/sopas.jpg" alt="">
-            <div class="imagem-overlay">
-                <div class="imagem-title">Sopa</div>
-                <p class="imagem-paragraf">Sopa muito boa</p>
-            </div>
-        </div>
-        <div class="item2">
-            <img class="imagens-comidas" src="./assets/esfirra-exemplo2.jpg" alt="">
-            <div class="imagem-overlay2">
-                <div class="imagem-title2">Esfirras</div>
-                <p class="imagem-paragraf2">Melhores Esfirras</p>
-            </div>
-        </div>
-        <div class="item3">
-            <img class="imagens-comidas" src="./assets/saladas-de-pote.jpg" alt="">
-            <div class="imagem-overlay3">
-                <div class="imagem-title3">Sala de Pote</div>
-                <p class="imagem-paragraf3">Saladinha de Pote</p>
-            </div>
-
-        </div>
-
-
-    </div>
 
 
 
